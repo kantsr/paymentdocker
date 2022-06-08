@@ -37,7 +37,7 @@ public class PaymentController {
 		return (List<Payments>) paymentRepository.findAll();
 	}
 	
-	@PutMapping("/payments/{id}")
+	@PutMapping("/payment/{id}")
 	public Payments updateTutorial(@PathVariable("id") int payment_id, @RequestBody Payments payments) {
 		Optional<Payments> paymentData = paymentRepository.findById(payment_id);
 
